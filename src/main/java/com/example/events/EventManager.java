@@ -1,11 +1,11 @@
 package com.example.events;
-import java.util.UUID;
+//import java.util.String;
 public class EventManager {
-    Event event;
+    private Event event;
     public EventManager(Event event){
         this.event = event;
     }
-    public boolean enterEvent(UUID tagID){
+    public boolean enterEvent(String tagID){
 
         if(event.isBooked(tagID)){
             event.addAttendee(tagID);
@@ -19,12 +19,12 @@ public class EventManager {
             return false;
         }
     }
-    public boolean exitEvent(UUID tagID){
+    public boolean exitEvent(String tagID){
         event.removeAttendee(tagID);
         return true;
     }
 
-    public boolean addBooking(UUID tagID){
+    public boolean addBooking(String tagID){
 
         return event.addBooking(tagID);
     }
