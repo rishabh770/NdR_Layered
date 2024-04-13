@@ -12,7 +12,7 @@ public class Logic {
 
     public Logic(){
         eventManagers = new HashMap<>();
-        addEvent("Event1","Technical",10);
+        addEvent("Event1","Technical",1);
         addEvent("Event2","Entertainment",5);
         addEvent("Event3","FoodStall",4);
     }
